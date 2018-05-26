@@ -50,6 +50,7 @@
 肛門口 pos
 眼睛 pos
 眼 pos
+雙眼 pos
 會陰部 pos
 會陰 pos
 扁桃腺 pos
@@ -100,3 +101,8 @@
 頭皮 pos
 屁股 pos 
 尿管 pos
+扁桃腺 pos
+十二指腸 pos 
+腸 pos
+傷口 pos
+牙齦 pos
