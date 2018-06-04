@@ -2,11 +2,10 @@
 頭暈 sym
 暈 sym
 暈倒 sym
-腹痛 sym
 想吐 sym
 吐 sym
-頭痛 sym
 發燒 sym
+偏頭痛 sym
 痛 sym
 紅疹 sym
 起紅疹 sym
@@ -29,9 +28,7 @@
 疼痛 sym
 流鼻水 999 sym
 流鼻血 999 sym
-胸痛 sym
 胸悶 sym
-胃痛 sym
 腳麻 sym
 手麻 sym
 麻 sym
@@ -40,7 +37,6 @@
 痠痛 sym
 酸痛 sym
 肺炎 sym
-腰痛 sym
 無力 sym
 脹氣 sym
 拉肚子 sym
@@ -65,7 +61,6 @@
 低血壓 sym
 食慾差 sym
 不說話 sym
-喉嚨痛 sym
 四肢無力 sym
 解尿痛 sym
 打嗝 sym
@@ -95,7 +90,7 @@
 解血便 sym
 解鮮血便 sym
 脹痛 sym
-心胸口悶痛 sym
+悶痛 sym
 耳鳴 sym
 口乾 sym
 無呼吸 sym
@@ -134,7 +129,6 @@
 情緒不穩 sym
 疼 sym
 吃不下 sym
-腹脹痛 sym
 嗜睡 sym
 出血 sym
 發炎 sym
