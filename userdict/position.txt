@@ -50,7 +50,6 @@
 肛門口 pos
 眼睛 pos
 眼 pos
-雙眼 pos
 會陰部 pos
 會陰 pos
 扁桃腺 pos
