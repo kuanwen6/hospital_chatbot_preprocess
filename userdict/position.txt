@@ -2,6 +2,7 @@
 胸口 pos
 胸 pos
 胸部 pos
+胸腔 pos
 皮膚 pos
 胃 pos
 胃部 pos
@@ -15,6 +16,7 @@
 腰部 pos
 腰 99999 pos
 腳 pos
+腳跟 pos
 腳趾 pos
 足 pos
 足背 pos
@@ -30,6 +32,7 @@
 下肢 pos
 上肢 pos
 生殖器 pos
+睪丸 pos
 頭部 pos
 頭 pos
 頸 pos
@@ -99,6 +102,8 @@
 舌頭 pos
 頭皮 pos
 屁股 pos 
+臀部 pos
+尾椎 pos
 尿管 pos
 扁桃腺 pos
 十二指腸 pos 

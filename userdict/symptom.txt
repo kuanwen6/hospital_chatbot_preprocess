@@ -17,11 +17,13 @@
 腹瀉 sym
 心悸 sym
 水腫 sym
+腫脹 sym
 呼吸喘 sym
 喘 sym
 嘔吐 sym
 血尿 sym
 腫痛 sym
+抽痛 sym
 腫 sym
 紅腫 sym
 撕裂傷 sym
@@ -63,6 +65,7 @@
 不說話 sym
 四肢無力 sym
 解尿痛 sym
+解尿疼痛 sym
 打嗝 sym
 說不出話 sym
 搔癢 sym
@@ -71,7 +74,7 @@
 走路會喘 sym
 喘 sym 
 昏倒 sym
-雙眼周圍發紅 sym
+發紅 sym
 吃不好 sym
 反應變慢 sym
 寒顫 sym

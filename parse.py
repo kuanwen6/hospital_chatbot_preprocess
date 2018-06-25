@@ -19,7 +19,8 @@ if __name__ == '__main__':
     #for i in ['Kcom','Kstatus','Woundchk9','Medchk8','Creason','Cresult']:\
         #csv[i] = csv[i].map(lambda x: str(x).encode("latin1").decode('big5'))
     csv['Kcom'] = csv['Kcom'].map(lambda x: str(x).encode("latin1").decode('big5'))
+    csv['Cresult'] = csv['Cresult'].map(lambda x: str(x).encode("latin1").decode('big5'))
 
 
     print(csv.head())
-    csv[['Pno', 'Caseno','Kcom']].to_csv('Kcom2_'+args.input, index=False,encoding="utf_8_sig")
+    csv[['Pno', 'Caseno','Kcom','Bdate','Edate','Cresult']].to_csv('Kcom2_'+args.input, index=False,encoding="utf_8_sig")
