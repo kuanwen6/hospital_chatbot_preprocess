@@ -1,63 +1,20 @@
-## 0611
-### 前端輸入注意部分
-1. 輸入部分去掉左/右/雙
-2. 同義字處理
-3. [新的csv](https://drive.google.com/open?id=18aqG6catSZG-_-c3C_B8txEG4w0ioXZ8)
-4. Cluster表(在cluster.ipynb)
+# hospital_chatbot_preprocess
+為hospital_chatbot的資料前處理部分，目的在結構化主訴以及為其分群
+[input csv file](https://drive.google.com/open?id=1X-KZ8BpUlMSTF645GtsHREtLibdvXcAt)
+[columns description](https://drive.google.com/open?id=1CyHV_F2go8RAE_vlemtM4ybkNAuEZ5XZ)
 
-1,2的部分皆可以用以下的function來去除
-```python=
-position_replace = {
-    '腹部':'腹','肚子':'腹',
-    '胸部':'胸','胸口':'胸',
-    '肩胛骨':'背','背部':'背',
-    '臉部':'臉','臉頰':'臉','鼻子':'臉','耳朵':'臉','唇':'臉','眼':'臉','嘴唇':'臉','額頭':'臉',
-    '脖子':'頸','頸部':'頸','後頸':'頸',
-    '嘴巴':'嘴','牙齦':'嘴','口腔':'嘴','唇':'嘴',
-}
+## 環境
+1. python 3
+2. jupyter notebook
 
-sym_replace = {
-    '疼痛':'痛','疼':'痛','痠痛':'痛','脹痛':'痛','腫痛':'痛','絞痛':'痛','悶痛':'痛',
-    '嘔吐':'吐','想吐':'吐',
-    '心跳快':'心悸',
-    '麻木':'麻',
-    '發冷':'畏寒',
-    '疹子':'紅疹',
-}
+## 程式架構
+### parse.py
+* 由於原始的csv編碼格式有些問題，因此需要重新編碼並輸出需要的欄位
 
-f_replace = {
-    '左邊':'',
-    '右邊':'',
-    '左':'',
-    '右':'',
-    '左方':'',
-    '右方':'',
-    '雙':'',
-}
-
-def replace_w(string, replace_dict):
-    fin = 0
-    
-    while fin == 0:
-        match = list()
-        
-        for d in replace_dict:
-            if d in string:
-                match.append(d)
-        
-        if len(match) == 0:
-            fin = 1
-        else:
-            max_seg = ''
-            for m in match:
-                if len(m) > len(max_seg):
-                    max_seg = m
-            
-            string = string.replace(max_seg, replace_dict[max_seg])
-    return string
-
-# 將字串根據輸入的dictionary來取代同義字
-p = replace_w(p, position_replace)
-p = replace_w(p, f_replace)
-k = replace_w(k, sym_replace)
-```
+### export_csv.ipynb
+* 將parse.py的輸出作為輸入，最後輸出主訴的**症狀**、**部位**、**時間**及**分群結果**
+* 其斷詞、詞性分析皆是使用jieba並根據自訂義的辭典來斷詞的
+    1. ./userdict/symptom.txt : 症狀辭典
+    2. ./userdict/position.txt : 部位辭典
+    3. ./userdict/time.txt : 時間辭典
+    4. ./userdict/others.txt : 其他

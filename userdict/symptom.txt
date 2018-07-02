@@ -17,6 +17,7 @@
 腹瀉 sym
 心悸 sym
 水腫 sym
+水腫痛 sym
 腫脹 sym
 呼吸喘 sym
 喘 sym
@@ -30,7 +31,7 @@
 疼痛 sym
 流鼻水 999 sym
 流鼻血 999 sym
-胸悶 sym
+悶 sym
 腳麻 sym
 手麻 sym
 麻 sym
@@ -157,3 +158,10 @@
 自殘 sym
 吃安眠藥 sym
 痰 sym
+痛風 sym
+灼熱痛 sym
+坐骨神經痛 sym
+緊痛 sym
+解尿血絲 sym
+呼吸悶痛 sym
+紅痛 sym

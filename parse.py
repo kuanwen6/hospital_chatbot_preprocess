@@ -13,14 +13,10 @@ if __name__ == '__main__':
     print(csv.head())
     print(csv.shape)
 
-    #csv = csv[['Pno', 'Caseno','Bdate','Edate','Cresult','Cdis1','Cdis2','Cdis3','Cdis4','Cdis5','Kstatus','Woundchk9','Medchk1','Medchk2','Medchk3','Medchk4','Medchk5','Medchk6','Medchk7','Medchk8','Ke','Km','Kv','Kright','Kleft','Kt','Kp','Kr','Kbp1','Kbp2','Kpos','Kcom','Sex','Creason']]
-    
-    # if is error there, please check the encode type,  maybe re-store in notepad/vscode will help 
-    #for i in ['Kcom','Kstatus','Woundchk9','Medchk8','Creason','Cresult']:\
-        #csv[i] = csv[i].map(lambda x: str(x).encode("latin1").decode('big5'))
+    # if is error here, please check the encode type,  maybe re-store in notepad/vscode will help 
     csv['Kcom'] = csv['Kcom'].map(lambda x: str(x).encode("latin1").decode('big5'))
     csv['Cresult'] = csv['Cresult'].map(lambda x: str(x).encode("latin1").decode('big5'))
 
 
     print(csv.head())
-    csv[['Pno', 'Caseno','Kcom','Bdate','Edate','Cresult']].to_csv('Kcom2_'+args.input, index=False,encoding="utf_8_sig")
+    csv[['Pno', 'Caseno','Kcom','Bdate','Edate','Cresult']].to_csv('Kcom_'+args.input, index=False,encoding="utf_8_sig")
