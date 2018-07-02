@@ -1,7 +1,7 @@
 # hospital_chatbot_preprocess
 為hospital_chatbot的資料前處理部分，目的在結構化主訴以及為其分群
-[input csv file](https://drive.google.com/open?id=1X-KZ8BpUlMSTF645GtsHREtLibdvXcAt)
-[columns description](https://drive.google.com/open?id=1CyHV_F2go8RAE_vlemtM4ybkNAuEZ5XZ)
+* [input csv file](https://drive.google.com/open?id=1X-KZ8BpUlMSTF645GtsHREtLibdvXcAt)
+* [columns description](https://drive.google.com/open?id=1CyHV_F2go8RAE_vlemtM4ybkNAuEZ5XZ)
 
 ## 環境
 1. python 3
